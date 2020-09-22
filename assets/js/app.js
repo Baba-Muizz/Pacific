@@ -1,3 +1,28 @@
+// contact form validation
+function validateForm() {
+    var name =document.getElementById('name').value;
+    var message=document.getElementById('message').value;
+    var email=document.getElementById('email').value;
+    var answer=document.getElementById('Answer');
+    
+    if (name =="" || message=="" || email=="") {
+        answer.innerHTML="Fill All fields";
+        return false;
+    }
+    
+}
+// to input only text in name
+function validateName(event) {
+    char=event.which;
+    if(char >31 && char !=32 && (char <65 || char >90) && (char <97 || char >122)) {
+        return false;
+    }
+}
+
+
+
+
+
 // to input only numbers in phoneinput
 // function a(event){
 //  var Number = event.which;
@@ -6,7 +31,7 @@
 //  }
 // }
 
-
+// reg form validation
 function regFormValidate(){
 var email=document.getElementById('regEmail').value;
 var password=document.getElementById('regPassword').value;
@@ -48,8 +73,8 @@ if (lastName == "" ) {
     lastName.focus;
     return false;
 }
-if (phone == "") {
-    answer.innerHTML="fill Phone";
+if (phone == "" || isNaN(phone)) {
+    answer.innerHTML="Confirm Phone Number";
     phone.focus;
     return false;
 }
@@ -58,9 +83,9 @@ if (address == "" ) {
     address.focus;
     return false;
 }
-if ((radio[1].checked == false) && (radio[2].checked == false) && (radio[2].checked == false)) {
+if ((radio[0].checked == false) && (radio[1].checked == false) && (radio[2].checked == false)) {
     answer.innerHTML=" select a gender";
     return false;
 } 
-return true;
+
 }

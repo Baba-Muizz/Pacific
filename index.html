@@ -40,7 +40,7 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class=" nav navbar-nav pull-right">
-            <li><a href="#services"><i class="fa fa-lock "></i > Log In </a></li>
+            <li><a href="login.html"><i class="fa fa-lock "></i > Log In </a></li>
             <li><a href="register.html"><i class="fa fa-user success"></i> Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -195,15 +195,15 @@
     <div class="container">
       <div class="img-bg">
         <img src="assets/img/Pacific.jpg" alt="" class="img-responsive">
-      <form action="">
         <div class="form">
           <h1 class="text-center">Contact Us</h1>
           <hr>
-          <form class="myForm" onsubmit="return validateForm()" action="" method="">
+          <h3 id="Answer" class="text-uppercase text-center" style="color:red;"></h3>
+          <form class="myForm" onsubmit="return validateForm()" action="" method="post">
           <label for="name">Your Name</label>
-            <input type="text" onkeypress="return a(event)"  name="name"  class="form-control" id="name" placeholder="Your Name" value=""><br>
+            <input type="text" name="name" onkeypress="return validateName(event)"  class="form-control" id="name" placeholder="Your Name" value="">
             <label for="email">E-Mail</label>
-            <input type="email"  name="email"  class="form-control" id="email" placeholder="E-Mail" value=""><br>
+            <input type="email"  name="email"  class="form-control" id="email" placeholder="E-Mail" value="">
               <label for="message" >Message</label>
             <textarea name="message" id="message" maxlength="1000" cols="30" rows="10" placeholder="Enter Your Message Here" class="form-control"></textarea>
           <div class="submit">
@@ -212,7 +212,6 @@
           </form>
         </div>
         </div>
-      </form>
     </div>
   </section>
   
@@ -221,13 +220,13 @@
    <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12">
           <h3>New Ideas?</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           <a href="#" class="btn btn-success">Read more</a>
         </div>
   
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-4">
           <h3>Partners</h3>
           <ul>
             <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Logistics</a></li>
@@ -238,7 +237,7 @@
           </ul>
         </div>
   
-        <div class="col-md-2">
+        <div class="col-md-2 col-xs-5">
           <h3>Location</h3>
           <ul>
             <li><a href="#"><i class="fa fa-chevron-circle-right"></i> Abuja</a></li>
@@ -249,7 +248,7 @@
           </ul>
         </div>
   
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-3">
           <h3>Contact Us</h3>
           <ul>
             <li><i class="fa fa-map-marker"></i>1st floor, Reinsurance Building, Abuja</li>
@@ -264,11 +263,12 @@
           <p>Copyright &copy;  Pacific. All Rights Reserved.</p>
         </div>
         <div class="col-md-6 text-right">
-          <a href=""><i class="fa fa-facebook-square fa-2x"></i></a>
-          <a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
-          <a href=""><i class="fa fa-instagram fa-2x"></i></a>
-          <a href=""><i class="fa fa-youtube-square fa-2x"></i></a>
+          <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fa fa-youtube-square fa-2x"></i></a>
         </div>
+        <div class="top"><a href="#top" class="fa fa-chevron-up text-center"><br> Top</a></div>
       </div>
       </footer>
     </div>
@@ -280,7 +280,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
      <!-- Include all compiled plugins (below), or include individual files as needed -->
-     <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>   
+
      <script src="assets/js/app.js"></script>
   </body>
 </html>

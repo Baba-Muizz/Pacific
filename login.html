@@ -34,12 +34,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> </a></li>
-            
+            <li class="active"><a href="index.html"><i class="fa fa-home"></i> </a></li>
           </ul>
           <ul class=" nav navbar-nav pull-right">
-            <li><a href="login.html"><i class="fa fa-lock "></i > Log In </a></li> 
-            <li><a href="register.html"><i class="fa fa-user success"></i> Register</a></li>
+            <li><a href="#services"><i class="fa fa-lock "></i > Log In </a></li>
+              <li><a href="register.html"><i class="fa fa-user success"></i> Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -51,63 +50,27 @@
     <!-- header section end -->
 
     <!-- start about us -->
-    <section class="register">
+    <section class="login">
     <div class="about-box container">
-      <h1 class="text-center" id="register">Register</h1>
+      <h1 class="text-center" id="login">Log In</h1>
       <hr>
-      <form class="col-md-8 col-md-offset-2 page-form" onsubmit="return regFormValidate()" action="login.html" method="post">
+      <form class="col-md-8 col-md-offset-2 page-form" onsubmit="return regFormValidate()" action="" method="post">
         <fieldset>
           <legend>User Credentials</legend>
           <div class="form-group">
-            <label for="email">E-mail <span style="color: red;">*</span></label>
-            <input type="email" id="regEmail" autocomplete="" name="email" class="form-control" placeholder="Enter e-mail address" value="">
+            <label for="email">E-mail </label>
+            <input type="email" id="logEmail" autocomplete="" name="email" class="form-control" placeholder="Enter e-mail address" value="">
           </div>
 
           <div class="form-group">
-            <label for="password">Password <span style="color: red;">*</span></label>
-            <input type="password" autocomplete="" id="regPassword" name="password" class="form-control" placeholder="Enter at least 6 characters for password">
+            <label for="password">Password </label>
+            <input type="password" autocomplete="" id="logPassword" name="password" class="form-control" placeholder="Enter password">
           </div>
 
+          
+          <h3 id="logAnswer" class="text-uppercase text-center" style="color:red;"></h3>
           <div class="form-group">
-            <label for="confirm">Confirm Password <span style="color: red;">*</span></label>
-            <input type="password" autocomplete="" id="regConfirm" name="confirm_password" class="form-control" placeholder="Repeat the password">
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>User Profile</legend>
-          <div class="form-group">
-            <label for="firstname">First name <span style="color: red;">*</span></label>
-            <input type="text"  onkeypress="return validateName(event)" id="regFirstname" autocomplete="" name="firstname" placeholder="Enter your first name" class="form-control" value="">
-          </div>
-
-          <div class="form-group">
-            <label for="middlename">Middle name</label>
-            <input type="text"  onkeypress="return validateName(event)" id="regMiddlename" autocomplete="" name="middlename" placeholder="Enter your middle name" class="form-control" value="">
-          </div>
-
-          <div class="form-group">
-            <label for="surname">Surname <span style="color: red;">*</span></label>
-            <input type="text"  onkeypress="return validateName(event)" id="regSurname" name="surname" placeholder="Enter your surname" class="form-control" value="">
-          </div>
-         <div class="form-group-radio">
-            <label for="">Gender <span style="color: red;">*</span></label>
-            <input type="radio" name="gender" value="Male"> Male
-            <input type="radio" name="gender" value="Female"> Female
-            <input type="radio" name="gender" value="Others"> Others
-          </div>
-          <div class="form-group">
-            <!-- <label for="phone">Phone <span>*</span></label> -->
-            <input type="text" id="regPhone" name="phone" placeholder="Enter your phone number (e.g 09012345678)" maxlength="11" class="form-control" value="">
-          </div>
-
-          <div class="form-group">
-            <label for="address">Address</label>
-            <textarea name="address" id="regAddress" class="form-control" placeholder="Address where you live" style="max-width: 100%;min-width: 100%;max-height:70px; min-height:70px;"></textarea>
-          </div>
-          <h3 id="regAnswer" class="text-uppercase text-center" style="color:red;"></h3>
-          <div class="form-group">
-            <button type="submit" name="userReg" class="btn btn-success btn-block"><i class="fa fa-user"></i> Register</button>
+            <button type="submit" name="userReg" class="btn btn-success btn-block"><i class="fa fa-user"></i> Login</button>
           </div>
       </form>
   
